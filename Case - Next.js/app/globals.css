@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Oficial Meta */
+  --color-meta-dark: #131936;
+  --color-meta-cyan: #22c0ff;
+  --color-meta-light: #f4f7ff;
+
+  /* Consome a variável gerada pelo next/font no layout.tsx */
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+
+  /* Gradiente Oficial */
+  --background-image-meta-gradient: linear-gradient(
+    90deg,
+    #2ad8ff 0%,
+    #0067ff 100%
+  );
+}
+
+@layer base {
+  /* Regra de identidade da Meta: Títulos sempre em minúscula e em dark blue */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply lowercase font-semibold text-meta-dark;
+  }
+
+  /* Destaques (strong) sempre com a cor de destaque (cyan) */
+  strong {
+    @apply font-bold text-meta-cyan;
+  }
+}
+
+@layer utilities {
+  /* Utilitários prontos para eles usarem o gradiente da marca em botões ou textos */
+  .bg-meta-gradient {
+    background-image: var(--background-image-meta-gradient);
+  }
+
+  .text-meta-gradient {
+    background-image: var(--background-image-meta-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

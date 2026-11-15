@@ -1,0 +1,14 @@
+[
+  {
+    "id": "tkt-001",
+    "title": "Internet intermitente na sala de reuniões",
+    "status": "Aberto",
+    "createdAt": "2026-05-27T10:00:00.000Z"
+  },
+  {
+    "id": "tkt-002",
+    "title": "Substituição de monitor",
+    "status": "Em Andamento",
+    "createdAt": "2026-05-26T14:30:00.000Z"
+  }
+]

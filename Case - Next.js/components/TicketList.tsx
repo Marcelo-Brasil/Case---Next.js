@@ -35,9 +35,13 @@ export default function TicketList({ tickets }: { tickets: Ticket[] }) {
             </span>
           </div>
 
-          <h3 className="text-xl mb-8 group-hover:text-meta-cyan transition-colors">
+          <h3 className="text-xl mb-3 group-hover:text-meta-cyan transition-colors">
             {ticket.title}
           </h3>
+
+          <p className="text-sm text-meta-dark/60 mb-8">
+            {ticket.description}
+          </p>
 
           <div className="flex justify-between items-center text-[11px] text-meta-dark/40 pt-4 border-t border-slate-50">
             <div className="flex items-center gap-1.5">

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { X } from "lucide-react"; // Instale lucide-react ou use uma SVG
+import { X } from "lucide-react";
+import { createTicket } from "@/actions/tickets";
 
 export default function CreateTicketModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,8 +38,7 @@ export default function CreateTicketModal() {
                 </button>
               </div>
 
-              {/* TODO: O trainee deve implementar a Server Action e conectar ao formulário */}
-              <form className="flex flex-col gap-6">
+              <form action={createTicket} className="flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
                   <label
                     htmlFor="title"
@@ -56,6 +56,23 @@ export default function CreateTicketModal() {
                   />
                 </div>
 
+                <div className="flex flex-col gap-2">
+                  <label
+                    htmlFor="description"
+                    className="text-sm font-semibold text-meta-dark/60 ml-1"
+                  >
+                    descrição do problema
+                  </label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Descreva o problema..."
+                    required
+                    rows={4}
+                    className="px-5 py-4 bg-meta-light rounded-2xl border border-slate-100 focus:ring-2 focus:ring-meta-cyan outline-none transition-all text-meta-dark resize-none"
+                  />
+                </div>
+
                 <div className="flex gap-3 pt-2">
                   <button
                     type="button"
@@ -66,7 +83,7 @@ export default function CreateTicketModal() {
                   </button>
                   <button
                     type="submit"
-                    className="flex-[2] bg-meta-gradient text-white font-bold py-4 rounded-2xl shadow-md hover:opacity-90 transition-opacity"
+                    className="flex-2 bg-meta-gradient text-white font-bold py-4 rounded-2xl shadow-md hover:opacity-90 transition-opacity"
                   >
                     enviar chamado
                   </button>

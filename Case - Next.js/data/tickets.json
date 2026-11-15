@@ -2,12 +2,14 @@
   {
     "id": "tkt-001",
     "title": "Internet intermitente na sala de reuniões",
+    "description": "A conexão com a internet apresenta interrupções frequentes na sala de reuniões.",
     "status": "Aberto",
     "createdAt": "2026-05-27T10:00:00.000Z"
   },
   {
     "id": "tkt-002",
     "title": "Substituição de monitor",
+    "description": "O monitor da estação de trabalho precisa ser substituído.",
     "status": "Em Andamento",
     "createdAt": "2026-05-26T14:30:00.000Z"
   }

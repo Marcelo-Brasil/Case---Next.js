@@ -1,5 +1,12 @@
 [
   {
+    "id": "tkt-1794728276708",
+    "title": "Monitor não liga",
+    "description": "O monitor não liga",
+    "status": "Aberto",
+    "createdAt": "2026-11-15T07:37:56.708Z"
+  },
+  {
     "id": "tkt-001",
     "title": "Internet intermitente na sala de reuniões",
     "description": "A conexão com a internet apresenta interrupções frequentes na sala de reuniões.",

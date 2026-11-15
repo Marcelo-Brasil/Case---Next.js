@@ -10,9 +10,9 @@ export default async function Home() {
       {/* Header com Ação Principal */}
       <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
         <div>
-          <h1>central de chamados</h1>
+          <h1>Central de chamados</h1>
           <p className="text-meta-dark/60 text-lg mt-2">
-            gerencie e acompanhe as solicitações de suporte <strong>ti</strong>.
+            Gerencie e acompanhe as solicitações do suporte de <strong>ti</strong>.
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default async function Home() {
       {/* Conteúdo Principal */}
       <section className="flex flex-col gap-8">
         <div className="flex items-center gap-4">
-          <h2>fila de atendimento</h2>
+          <h2>Fila de atendimento:</h2>
           <div className="h-px flex-grow bg-slate-200"></div>
           <span className="bg-meta-dark text-white text-xs font-bold px-4 py-2 rounded-full">
             {tickets.length} chamados

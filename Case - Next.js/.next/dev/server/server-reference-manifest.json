@@ -1,0 +1,18 @@
+{
+  "node": {
+    "40ec7532cf025b78a210bcc15d68b1b096ae34add8": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/Case---Next.js/Case - Next.js/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Case---Next.js/Case - Next.js/actions/tickets.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createTicket",
+          "filename": "Case---Next.js/Case - Next.js/actions/tickets.ts"
+        }
+      },
+      "filename": "Case---Next.js/Case - Next.js/actions/tickets.ts",
+      "exportedName": "createTicket"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "SC3+R3At2TonDuq74dbaOZBZm2E8PH9DkKv31r8gbgw="
+}

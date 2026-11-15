@@ -2,7 +2,6 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-
 import { addTicket } from "@/lib/storage";
 
 export async function createTicket(formData: FormData) {
